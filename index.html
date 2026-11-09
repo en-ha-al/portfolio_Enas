@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="إيناس حسن - مهندسة برمجيات ومطوّرة ويب واجهات أمامية • السيرة الذاتية التفاعلية ومعرض الأعمال">
+    <meta name="author" content="Enas Hasan">
+
+    <title>إيناس حسن | مهندسة برمجيات ومطورة ويب</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Modern Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-logo" aria-label="الرئيسية">
+                <span class="logo-symbol">EH</span>
+                <span class="logo-text">إيناس حسن</span>
+                <span class="logo-badge">SE '26</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link" data-i18n="nav_about">نبذة عني</a>
+                <a href="#skills" class="nav-link" data-i18n="nav_skills">المهارات</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">المشاريع</a>
+                <a href="#uiux" class="nav-link" data-i18n="nav_uiux">تصاميم UI/UX</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معي</a>
+            </nav>
+
+            <!-- Nav Actions (Language, CV Print & Contact CTA) -->
+            <div class="nav-actions">
+                <button type="button" class="lang-btn" id="langToggleBtn" title="Switch Language / تغيير اللغة">
+                    <i class="fas fa-globe"></i>
+                    <span id="langBtnLabel">English</span>
+                </button>
+
+                <button type="button" class="btn-header-cta btn-print-cv" title="تحميل أو طباعة السيرة الذاتية">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>CV</span>
+                </button>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="#about" class="nav-link" data-i18n="nav_about">نبذة عني</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills">المهارات</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">المشاريع</a>
+        <a href="#uiux" class="nav-link" data-i18n="nav_uiux">تصاميم UI/UX</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معي</a>
+
+        <div class="mobile-drawer-footer">
+            <button type="button" class="lang-btn" id="mobileLangToggle" style="width: 100%; justify-content: center;">
+                <i class="fas fa-globe"></i>
+                <span>English / عربي</span>
+            </button>
+            <button type="button" class="btn-primary btn-print-cv" style="width: 100%; justify-content: center;">
+                <i class="fas fa-file-pdf"></i>
+                <span data-i18n="btn_download_cv">تحميل / طباعة CV</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+       HERO / HOME SECTION
+       ========================================================================== -->
+    <section class="hero-section" id="home">
+        <div class="container hero-grid">
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="hero-badge-wrap">
+                    <span class="pulse-dot"></span>
+                    <span data-i18n="hero_badge">مهندسة برمجيات 2026 • السيرة الذاتية الرقمية ومعرض الأعمال</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span data-i18n="hero_greeting">مرحباً، أنا</span><br>
+                    <span class="name-highlight" data-i18n="hero_name">إيناس حسن</span>
+                </h1>
+
+                <div class="hero-role-lead">
+                    <i class="fas fa-terminal"></i>
+                    <span data-i18n="hero_role">مهندسة برمجيات ومطوّرة ويب واجهات أمامية</span>
+                </div>
+
+                <p class="hero-desc" data-i18n="hero_desc">
+                    خريجة هندسة وتقنية البرمجيات لعام 2026 من كلية تقنية الحاسوب - غوط الشعال. متخصصة في بناء وتطوير تطبيقات ويب حديثة وعالية الأداء باستخدام Vue 3 و TypeScript، إلى جانب تصميم واجهات وتجربة المستخدم (UI/UX) في Figma.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn-primary">
+                        <i class="fas fa-layer-group"></i>
+                        <span data-i18n="btn_explore">استعراض المشاريع</span>
+                    </a>
+                    <button type="button" class="btn-secondary btn-print-cv">
+                        <i class="fas fa-file-pdf"></i>
+                        <span data-i18n="btn_download_cv">تحميل / طباعة CV</span>
+                    </button>
+                    <a href="#contact" class="btn-outline-cyan">
+                        <i class="fas fa-envelope"></i>
+                        <span data-i18n="nav_contact">تواصل معي</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4 data-i18n="stat_grad_val">2026</h4>
+                        <p data-i18n="stat_grad">سنة التخرج</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 data-i18n="stat_focus_val">Vue 3 & TS</h4>
+                        <p data-i18n="stat_focus">التركيز الأساسي</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4 data-i18n="stat_design_val">Figma UI/UX</h4>
+                        <p data-i18n="stat_design">أداة التصميم</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual / Profile Card -->
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <!-- Floating Tech Badges -->
+                    <div class="floating-badge badge-1">
+                        <i class="fab fa-vuejs"></i>
+                        <span data-i18n="badge_vue">Vue 3 & TypeScript</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fab fa-figma"></i>
+                        <span data-i18n="badge_figma">تصميم واجهات في Figma</span>
+                    </div>
+
+                    <div class="profile-img-wrap">
+                        <img src="enas2.jpg" alt="إيناس حسن - مهندسة برمجيات" class="profile-img">
+                    </div>
+
+                    <div class="profile-info">
+                        <h3 class="profile-name">إيناس حسن الغراري</h3>
+                        <p class="profile-subtitle">مهندسة برمجيات • مطوّرة ويب واجهات</p>
+                        
+                        <div class="profile-socials">
+                            <a href="mailto:enhasan8@gmail.com" class="social-pill" title="Email: enhasan8@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:0945188387" class="social-pill" title="Phone: 0945188387"><i class="fas fa-phone"></i></a>
+                            <a href="https://t.me/ee_na4" target="_blank" rel="noopener noreferrer" class="social-pill" title="Telegram: @ee_na4"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about_tag">الملف المهني</span>
+                <h2 class="section-title"><span class="gradient-text" data-i18n="about_title">بناء واجهات برمجية تجمع بين رصانة الهندسة وسلاسة التصميم</span></h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">الربط بين الفكر التصميمي لتجربة المستخدم (UI/UX) والتطوير البرمجي المنظم وقابل للتوسع.</p>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left Narrative Card -->
+                <div class="about-card-main">
+                    <p data-i18n="about_p1">
+                        أنا خريجة في هندسة وتقنية البرمجيات، أمتلك شغفاً كبيراً بتطوير الواجهات الأمامية للويب وبناء الحلول الرقمية المتكاملة. منحني مساري الأكاديمي أساساً متيناً في معمارية البرمجيات، وتصميم وتوصيف قواعد البيانات، وإدارة دورة حياة المشروع البرمجي.
+                    </p>
+                    <p data-i18n="about_p2">
+                        من خلال مشروعي التخرج 'يقين' وتصميمي لواجهات نظام شركة الشحن 'بريمولا'، اكتسبت خبرة تطبيقية في تحويل متطلبات الأنظمة إلى واجهات سلسة وسريعة الاستجابة. يمثل هذا الموقع سيرتي الذاتية التفاعلية المعتمدة.
+                    </p>
+
+                    <div class="about-education-box">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-details">
+                            <h4 data-i18n="edu_title">بكالوريوس في تقنية وهندسة البرمجيات</h4>
+                            <p data-i18n="edu_meta">كلية تقنية الحاسوب - غوط الشعال • دفعة ربيع 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Values Grid -->
+                <div class="about-values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-code"></i></div>
+                        <h4 data-i18n="val1_title">كود نظيف وهيكلية معيارية</h4>
+                        <p data-i18n="val1_desc">كتابة شيفرات برمجية قابلة للصيانة وإعادة الاستخدام وفق أحدث معايير المكونات والأنماط.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h4 data-i18n="val2_title">دقة تحويل التصميم إلى كود</h4>
+                        <p data-i18n="val2_desc">تحويل المخططات والنماذج من Figma إلى واجهات ويب حقيقية متجاوبة ومتطابقة بأعلى دقة.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-users-cog"></i></div>
+                        <h4 data-i18n="val3_title">روح الفريق والمنهجيات الحديثة</h4>
+                        <p data-i18n="val3_desc">القدرة على العمل والتنسيق الفعّال ضمن فرق العمل المتوازية (Parallel Teams).</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-rocket"></i></div>
+                        <h4 data-i18n="val4_title">التطوير البرمجي المستمر</h4>
+                        <p data-i18n="val4_desc">توسيع مهاراتي باستمرار، وأعمل حالياً على تعميق معرفتي بإطار العمل React.js.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       SKILLS SECTION (CATEGORIZED & HONEST)
+       ========================================================================== -->
+    <section id="skills" style="background: rgba(5, 8, 17, 0.5);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skills_tag">القدرات التقنية</span>
+                <h2 class="section-title"><span class="gradient-text" data-i18n="skills_title">المهارات والتقنيات البرمجية</span></h2>
+                <p class="section-subtitle" data-i18n="skills_subtitle">تصنيف شفاف وواضح يميّز بين التقنيات المستخدمة في مشاريع واقعية والتقنيات قيد التعلم المستمر.</p>
+            </div>
+
+            <div class="skills-container">
+                <!-- 1. Frontend Skills (Production / Hands-on) -->
+                <div class="skill-category-block">
+                    <div class="category-header">
+                        <div class="category-title-wrap">
+                            <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h3 class="category-title" data-i18n="cat_frontend">تطوير الواجهات الأمامية (Frontend)</h3>
+                        </div>
+                        <span class="category-badge badge-practical" data-i18n="badge_applied">خبرة عملية وتطبيقية</span>
+                    </div>
+
+                    <div class="skills-items-grid">
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #42b883;"><i class="fab fa-vuejs"></i></div>
+                            <div class="skill-info">
+                                <h5>Vue 3</h5>
+                                <span>Composition API & Vite</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #3178c6;"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h5>TypeScript</h5>
+                                <span>Typed Architecture</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #f7df1e;"><i class="fab fa-js-square"></i></div>
+                            <div class="skill-info">
+                                <h5>JavaScript (ES6+)</h5>
+                                <span>Async / DOM / APIs</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #e34f26;"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h5>HTML5</h5>
+                                <span>Semantic Structure</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #264de4;"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h5>CSS3</h5>
+                                <span>Flexbox / Grid / Custom Props</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #bd34fe;"><i class="fas fa-bolt"></i></div>
+                            <div class="skill-info">
+                                <h5>Vite</h5>
+                                <span>Modern Bundler</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #06b6d4;"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="skill-info">
+                                <h5>Responsive Design</h5>
+                                <span>Mobile-First Layouts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. UI/UX & Design Tools -->
+                <div class="skill-category-block">
+                    <div class="category-header">
+                        <div class="category-title-wrap">
+                            <div class="category-icon" style="background: rgba(217, 70, 239, 0.15); color: #d946ef;"><i class="fab fa-figma"></i></div>
+                            <h3 class="category-title" data-i18n="cat_design">تصميم واجهات وتجربة المستخدم (UI/UX)</h3>
+                        </div>
+                        <span class="category-badge badge-design" data-i18n="badge_uiux">تصميم ونمذجة</span>
+                    </div>
+
+                    <div class="skills-items-grid">
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #f24e1e;"><i class="fab fa-figma"></i></div>
+                            <div class="skill-info">
+                                <h5>Figma</h5>
+                                <span>Wireframes & Mockups</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #8b5cf6;"><i class="fas fa-sitemap"></i></div>
+                            <div class="skill-info">
+                                <h5>User Flows</h5>
+                                <span>Information Architecture</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #06b6d4;"><i class="fas fa-layer-group"></i></div>
+                            <div class="skill-info">
+                                <h5>Design Systems</h5>
+                                <span>Tokens & Reusable Components</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #10b981;"><i class="fas fa-hand-pointer"></i></div>
+                            <div class="skill-info">
+                                <h5>Prototyping</h5>
+                                <span>Interactive Walkthroughs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Backend & Database (Foundations) -->
+                <div class="skill-category-block">
+                    <div class="category-header">
+                        <div class="category-title-wrap">
+                            <div class="category-icon"><i class="fas fa-database"></i></div>
+                            <h3 class="category-title" data-i18n="cat_backend">الواجهات الخلفية وقواعد البيانات</h3>
+                        </div>
+                        <span class="category-badge badge-practical" data-i18n="badge_applied">خبرة عملية وتطبيقية</span>
+                    </div>
+
+                    <div class="skills-items-grid">
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #3776ab;"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h5>Python</h5>
+                                <span>Data Pipelines & Logic</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #e2e8f0;"><i class="fas fa-server"></i></div>
+                            <div class="skill-info">
+                                <h5>Flask API</h5>
+                                <span>RESTful Endpoints</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #cc292b;"><i class="fas fa-table"></i></div>
+                            <div class="skill-info">
+                                <h5>MS SQL Server</h5>
+                                <span>Relational Schemas & ERD</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-logo" style="color: #f59e0b;"><i class="fas fa-network-wired"></i></div>
+                            <div class="skill-info">
+                                <h5>RESTful Integration</h5>
+                                <span>JSON & Async Fetching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Currently Learning & Expanding -->
+                <div class="skill-category-block" style="border-color: rgba(6, 182, 212, 0.3);">
+                    <div class="category-header">
+                        <div class="category-title-wrap">
+                            <div class="category-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);"><i class="fas fa-graduation-cap"></i></div>
+                            <h3 class="category-title" data-i18n="cat_learning">تقنيات قيد التعلم والتطوير</h3>
+                        </div>
+                        <span class="category-badge badge-learning" data-i18n="badge_active_learn">قيد التعلم حالياً</span>
+                    </div>
+
+                    <div class="skills-items-grid">
+                        <div class="skill-card" style="border-color: rgba(97, 218, 251, 0.3);">
+                            <div class="skill-logo" style="color: #61dafb;"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <h5>React.js</h5>
+                                <span>Hooks & Component Architecture</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" style="border-color: rgba(129, 140, 248, 0.3);">
+                            <div class="skill-logo" style="color: #818cf8;"><i class="fas fa-cubes"></i></div>
+                            <div class="skill-info">
+                                <h5>State Management</h5>
+                                <span>Modern Store Patterns</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" style="border-color: rgba(16, 185, 129, 0.3);">
+                            <div class="skill-logo" style="color: #10b981;"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="skill-info">
+                                <h5>Web Performance</h5>
+                                <span>Optimization & Clean Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       PROJECTS / CASE STUDIES SECTION (THE 2 MAIN PROJECTS)
+       ========================================================================== -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projects_tag">دراسات الحالة والمشاريع</span>
+                <h2 class="section-title"><span class="gradient-text" data-i18n="projects_title">المشاريع المنفذة ودراسات الحالة</span></h2>
+                <p class="section-subtitle" data-i18n="projects_subtitle">استعراض تفصيلي لأهم المشاريع الهندسية والتطبيقية بأسلوب دراسة الحالة.</p>
+            </div>
+
+            <div class="projects-container">
+
+                <!-- ── PROJECT 1: YAQEEN (FLAGSHIP GRADUATION PROJECT) ── -->
+                <div class="case-study-card" id="projectYaqeen">
+                    <div class="case-study-header">
+                        <div>
+                            <div class="project-meta-top">
+                                <span class="project-tag-pill tag-grad" data-i18n="yaqeen_tag">مشروع التخرج المعتمد 2026</span>
+                                <span class="project-year">• ربيع 2026</span>
+                            </div>
+                            <h3 class="case-study-title" data-i18n="yaqeen_title">يقين (Yaqeen) — منصة ويب ذكية لاكتشاف تزييف الوجوه بالذكاء الاصطناعي</h3>
+                        </div>
+                    </div>
+
+                    <div class="case-study-body">
+                        <!-- Left Narrative Column -->
+                        <div class="case-study-narrative">
+                            <div class="case-block">
+                                <h4><i class="fas fa-exclamation-circle"></i> <span data-i18n="yaqeen_prob_title">المشكلة والتحدي</span></h4>
+                                <p data-i18n="yaqeen_prob_desc">
+                                    أدى الانتشار الهائل لتقنيات الذكاء الاصطناعي التوليدي والتزييف العميق (Deepfakes) إلى تهديد مصداقية الأدلة الرقمية وصعوبة التمييز بالعين المجردة. كان التحدي بناء منصة ويب متكاملة تجمع بين فحص الوجوه والتحليل الجنائي السريع.
+                                </p>
+                            </div>
+
+                            <div class="case-block">
+                                <h4><i class="fas fa-lightbulb"></i> <span data-i18n="yaqeen_sol_title">الحل الهندسي المنفذ</span></h4>
+                                <p data-i18n="yaqeen_sol_desc">
+                                    نظام ويب ذكي يعتمد على معمارية هجينة تجمع بين نماذج التعلم العميق (EfficientNet-B3 مع شبكة الكبسولات CapsuleNet) وأدوات التحليل الجنائي الرقمي (تحليل مستوى الخطأ ELA والبيانات الوصفية EXIF) مع خرائط حرارية تفسيرية (Explainable AI).
+                                </p>
+                            </div>
+
+                            <div class="role-highlight-box">
+                                <h4><i class="fas fa-user-check"></i> <span data-i18n="yaqeen_role_title">دوري المحدد في المشروع:</span></h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> <span data-i18n="yaqeen_role_1">تطوير الواجهات الأمامية للويب ولوحة التحكم الإدارية بالكامل باستخدام Vue 3 و TypeScript و Vite.</span></li>
+                                    <li><i class="fas fa-check-circle"></i> <span data-i18n="yaqeen_role_2">تصميم وتطوير مسارات تفاعل المستخدم لرفع الصور، ومحاذاة الوجوه المستخلصة، وعرض تقارير الفحص والنتائج الجنائية.</span></li>
+                                    <li><i class="fas fa-check-circle"></i> <span data-i18n="yaqeen_role_3">ربط وتكامل الواجهة الأمامية مع واجهة برمجة التطبيقات (Flask API) وإدارة تدفق البيانات مع Microsoft SQL Server.</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Tech Pills -->
+                            <div>
+                                <strong style="font-size: 0.88rem; color: var(--text-dim); text-transform: uppercase;">التقنيات المستخدمة:</strong>
+                                <div class="tech-pills-row">
+                                    <span class="tech-pill" style="color: #42b883;"><i class="fab fa-vuejs"></i> Vue 3</span>
+                                    <span class="tech-pill" style="color: #3178c6;"><i class="fab fa-js"></i> TypeScript</span>
+                                    <span class="tech-pill" style="color: #bd34fe;"><i class="fas fa-bolt"></i> Vite</span>
+                                    <span class="tech-pill" style="color: #3776ab;"><i class="fab fa-python"></i> Python & Flask API</span>
+                                    <span class="tech-pill" style="color: #cc292b;"><i class="fas fa-database"></i> MS SQL Server</span>
+                                    <span class="tech-pill" style="color: #06b6d4;"><i class="fas fa-brain"></i> ELA Forensics & Grad-CAM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Interactive Gallery Column -->
+                        <div class="case-study-gallery" id="yaqeenGallery">
+                            <div class="gallery-main-frame" title="Click to enlarge in full-screen">
+                                <img src="assets/projects/yaqeen/yaqeen_home.png" alt="Yaqeen Main Web Interface" class="gallery-main-img" data-caption="نظام يقين - الواجهة الرئيسية لمنصة الفحص والكشف الجنائي">
+                                <div class="gallery-overlay-hint">
+                                    <i class="fas fa-search-plus" style="font-size: 1.8rem;"></i>
+                                    <span data-i18n="zoom_hint">انقر لتكبير لقطة الشاشة</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs-row">
+                                <div class="gallery-thumb-item active" data-img="assets/projects/yaqeen/yaqeen_home.png" data-caption="نظام يقين - الواجهة الرئيسية لمنصة الفحص والكشف الجنائي">
+                                    <img src="assets/projects/yaqeen/yaqeen_home.png" alt="Main UI">
+                                </div>
+                                <div class="gallery-thumb-item" data-img="assets/projects/yaqeen/yaqeen_scan.png" data-caption="نظام يقين - شاشة استخلاص ومحاذاة الوجوه المستخرجة">
+                                    <img src="assets/projects/yaqeen/yaqeen_scan.png" alt="Scan & Alignment">
+                                </div>
+                                <div class="gallery-thumb-item" data-img="assets/projects/yaqeen/yaqeen_results.png" data-caption="نظام يقين - شاشة تصنيف التعلم العميق ونسبة الثقة">
+                                    <img src="assets/projects/yaqeen/yaqeen_results.png" alt="Results UI">
+                                </div>
+                                <div class="gallery-thumb-item" data-img="assets/projects/yaqeen/yaqeen_reports.png" data-caption="نظام يقين - واجهة تقارير التحليل الجنائي (ELA) والبيانات الوصفية">
+                                    <img src="assets/projects/yaqeen/yaqeen_reports.png" alt="Forensic Reports">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── PROJECT 2: PRIMULA (FIGMA UI/UX DESIGN) ── -->
+                <div class="case-study-card" id="projectPrimula">
+                    <div class="case-study-header">
+                        <div>
+                            <div class="project-meta-top">
+                                <span class="project-tag-pill tag-client" data-i18n="primula_tag">تصميم واجهات نظام لشركة بريمولا (Figma)</span>
+                                <span class="project-year">• اعتماد واستخدام تجاري واقعي</span>
+                            </div>
+                            <h3 class="case-study-title" data-i18n="primula_title">نظام شركة بريمولا (Primula) — تصميم واجهات وتجربة مستخدم لنظام إدارة الشحن والطلبيات</h3>
+                        </div>
+
+                        <div class="project-quick-actions">
+                            <a href="https://www.figma.com/design/mxraBWdMnhCi8UiaWbFeFn/Untitled?node-id=0-1&t=UJUxI1W22BM9pbBe-1" target="_blank" rel="noopener noreferrer" class="btn-outline-cyan">
+                                <i class="fab fa-figma"></i>
+                                <span data-i18n="view_figma">فتح نموذج Figma التفاعلي</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="case-study-body">
+                        <!-- Left Narrative Column -->
+                        <div class="case-study-narrative">
+                            <div class="case-block">
+                                <h4><i class="fas fa-boxes"></i> <span data-i18n="primula_prob_title">المشكلة وسياق العمل</span></h4>
+                                <p data-i18n="primula_prob_desc">
+                                    شركة بريمولا هي شركة شحن واستيراد طلبيات لزبائنها من المواقع العالمية. واجهت الشركة تحديات تشغيلية كبيرة في فترات الذروة بسبب الأنظمة اليدوية المتفرقة، مما أدى إلى صعوبة تتبع الشحنات وبطء معالجة الطلبات وضعف التواصل بين الأقسام.
+                                </p>
+                            </div>
+
+                            <div class="case-block">
+                                <h4><i class="fas fa-desktop"></i> <span data-i18n="primula_sol_title">الحل التصميمي وتجربة المستخدم في Figma</span></h4>
+                                <p data-i18n="primula_sol_desc">
+                                    تصميم واجهات وتجربة استخدام متكاملة في Figma لنظام يربط العملاء والموظفين والمندوبين والإدارة. شمل التصميم شاشات تفاعلية لإدارة الطلبيات، ومتابعة الشحنات، وإصدار الفواتير، ونماذج الهاتف المحمول.
+                                </p>
+                            </div>
+
+                            <div class="role-highlight-box" style="background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.3);">
+                                <h4><i class="fas fa-palette"></i> <span data-i18n="primula_role_title">دوري في المشروع والأمانة المهنية:</span></h4>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i> <span data-i18n="primula_role_1">المسؤولة عن تحليل وتصميم واجهات وتجربة المستخدم (UI/UX Design) بالكامل باستخدام Figma وبناء النماذج التفاعلية للشاشات.</span></li>
+                                    <li><i class="fas fa-check-circle"></i> <span data-i18n="primula_role_2">تحليل وتوصيف حالات الاستخدام (Use Cases) وتصميم تدفق العمليات من تسجيل الشحنة وحتى التسليم للعميل.</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Academic Honesty Notice -->
+                            <div class="integrity-notice">
+                                <i class="fas fa-info-circle"></i>
+                                <span data-i18n="primula_notice">توضيح للأمانة المهنية والعلمية: اقتصر دوري في هذا المشروع على دراسة وتحليل النظام وتصميم واجهات وتجربة المستخدم (UI/UX) باستخدام Figma. تولى فريق الطلاب الآخرين برمجة النظام، وتم اعتماد النظام رسمياً واستخدامه فعلياً من قبل شركة بريمولا.</span>
+                            </div>
+
+                            <!-- Tech Stack -->
+                            <div>
+                                <strong style="font-size: 0.88rem; color: var(--text-dim); text-transform: uppercase;">أدوات التصميم والنمذجة:</strong>
+                                <div class="tech-pills-row">
+                                    <span class="tech-pill" style="color: #f24e1e;"><i class="fab fa-figma"></i> Figma UI/UX</span>
+                                    <span class="tech-pill" style="color: #d946ef;"><i class="fas fa-layer-group"></i> Prototyping</span>
+                                    <span class="tech-pill" style="color: #8b5cf6;"><i class="fas fa-sitemap"></i> Wireframing & User Flows</span>
+                                    <span class="tech-pill" style="color: #06b6d4;"><i class="fas fa-tasks"></i> Use Case Modeling</span>
+                                    <span class="tech-pill" style="color: #10b981;"><i class="fas fa-check-circle"></i> اعتماد واستخدام تجاري فعلي</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Gallery Column (REAL FIGMA UI SCREENS of Primula) -->
+                        <div class="case-study-gallery" id="primulaGallery">
+                            <div class="gallery-main-frame" title="Click to enlarge in full-screen">
+                                <img src="assets/projects/primula/figma_screens/figma_screen_2.png" alt="تصميم واجهات نظام بريمولا في Figma" class="gallery-main-img" data-caption="نظام شركة بريمولا - واجهة تتبع وإدارة الشحنات والطلبيات (تصميم Figma)">
+                                <div class="gallery-overlay-hint">
+                                    <i class="fas fa-search-plus" style="font-size: 1.8rem;"></i>
+                                    <span data-i18n="zoom_hint">انقر لتكبير لقطة الشاشة</span>
+                                </div>
+                            </div>
+
+                            <div class="gallery-thumbs-row">
+                                <div class="gallery-thumb-item active" data-img="assets/projects/primula/figma_screens/figma_screen_2.png" data-caption="نظام شركة بريمولا - واجهة تتبع وإدارة الشحنات والطلبيات (تصميم Figma)">
+                                    <img src="assets/projects/primula/figma_screens/figma_screen_2.png" alt="شاشة إدارة الشحنات">
+                                </div>
+                                <div class="gallery-thumb-item" data-img="assets/projects/primula/figma_screens/figma_screen_4.png" data-caption="نظام شركة بريمولا - واجهة تفاصيل الشحنة والعمليات اللوجستية (تصميم Figma)">
+                                    <img src="assets/projects/primula/figma_screens/figma_screen_4.png" alt="تفاصيل الشحنة">
+                                </div>
+                                <div class="gallery-thumb-item" data-img="assets/projects/primula/figma_screens/figma_screen_5.png" data-caption="نظام شركة بريمولا - لوحة الإحصائيات والإدارة العامة (تصميم Figma)">
+                                    <img src="assets/projects/primula/figma_screens/figma_screen_5.png" alt="لوحة الإحصائيات">
+                                </div>
+                                <div class="gallery-thumb-item" data-img="assets/projects/primula/figma_screens/figma_screen_1.png" data-caption="نظام شركة بريمولا - تصميم واجهات تطبيق الهاتف المحمول (تصميم Figma)">
+                                    <img src="assets/projects/primula/figma_screens/figma_screen_1.png" alt="واجهة الهاتف المحمول">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       UI/UX FIGMA SHOWCASE SECTION
+       ========================================================================== -->
+    <section id="uiux" style="background: rgba(5, 8, 17, 0.4);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="uiux_tag">معرض تصاميم UI/UX</span>
+                <h2 class="section-title"><span class="gradient-text" data-i18n="uiux_title">التصميم المتمحور حول تجربة المستخدم في Figma</span></h2>
+                <p class="section-subtitle" data-i18n="uiux_subtitle">كل تطبيق ويب ناجح يبدأ بتحليل المتطلبات وتخطيط واجهات نظيفة وتجربة استخدام سهلة.</p>
+            </div>
+
+            <div class="figma-showcase-box">
+                <!-- 4 Step Process -->
+                <div class="figma-process-grid">
+                    <div class="process-step-card">
+                        <div class="step-num">01 / DISCOVERY</div>
+                        <h4 data-i18n="step1_title">البحث والتحليل</h4>
+                        <p data-i18n="step1_desc">فهم متطلبات أصحاب المصلحة وتخطيط مسارات المستخدم (User Journey).</p>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-num">02 / STRUCTURE</div>
+                        <h4 data-i18n="step2_title">المخططات الهيكلية (Wireframes)</h4>
+                        <p data-i18n="step2_desc">رسم الهيكل العام للشاشات مع التركيز على سهولة الوصول والتسلسل البصري.</p>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-num">03 / DESIGN SYSTEM</div>
+                        <h4 data-i18n="step3_title">نظم التصميم (Design Systems)</h4>
+                        <p data-i18n="step3_desc">بناء مكونات قابلة لإعادة الاستخدام وتحديد لوحات ألوان وخطوط متناسقة.</p>
+                    </div>
+
+                    <div class="process-step-card">
+                        <div class="step-num">04 / PROTOTYPE</div>
+                        <h4 data-i18n="step4_title">النماذج التفاعلية (Prototypes)</h4>
+                        <p data-i18n="step4_desc">إنشاء نماذج حية تحاكي التطبيق الفعلي واختبار سهولة الاستخدام قبل مرحلة البرمجة.</p>
+                    </div>
+                </div>
+
+                <!-- Interactive Figma Banner Card -->
+                <div class="figma-embed-card">
+                    <i class="fab fa-figma figma-big-icon"></i>
+                    <h4 data-i18n="figma_cta_title">تصفح مشروع شركة بريمولا التفاعلي على Figma</h4>
+                    <p data-i18n="figma_cta_desc">يمكنك استعراض ملف التصميم الكامل والمكونات والشاشات التفاعلية مباشرة على منصة Figma.</p>
+                    <a href="https://www.figma.com/design/mxraBWdMnhCi8UiaWbFeFn/Untitled?node-id=0-1&t=UJUxI1W22BM9pbBe-1" target="_blank" rel="noopener noreferrer" class="btn-primary" style="background: #f24e1e;">
+                        <i class="fab fa-figma"></i>
+                        <span data-i18n="btn_open_figma">فتح نموذج Figma التفاعلي</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact_tag">تواصل معي</span>
+                <h2 class="section-title"><span class="gradient-text" data-i18n="contact_title">معلومات التواصل المباشر</span></h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">يسعدني تواصلكم عبر البريد الإلكتروني أو الهاتف أو التيليجرام.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel">
+                    <div class="contact-card-item">
+                        <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h5 data-i18n="info_email">البريد الإلكتروني</h5>
+                            <a href="mailto:enhasan8@gmail.com">enhasan8@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item">
+                        <div class="contact-icon-box" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.15);"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h5 data-i18n="info_phone">رقم الهاتف</h5>
+                            <a href="tel:0945188387">0945188387</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item">
+                        <div class="contact-icon-box" style="color: #0088cc; background: rgba(0, 136, 204, 0.15);"><i class="fab fa-telegram"></i></div>
+                        <div>
+                            <h5>Telegram</h5>
+                            <a href="https://t.me/ee_na4" target="_blank" rel="noopener noreferrer">@ee_na4</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-item">
+                        <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h5 data-i18n="info_loc">الموقع</h5>
+                            <p data-i18n="info_loc_val">طرابلس، ليبيا</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Direct Message Form Panel -->
+                <div class="contact-form-panel">
+                    <h3 data-i18n="btn_cv">إرسال رسالة مباشرة</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" data-i18n="form_name">الاسم الكريم</label>
+                            <input type="text" id="contactName" class="form-control" required data-i18n-ph="form_name" placeholder="الاسم الكريم">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail" data-i18n="form_email">البريد الإلكتروني</label>
+                            <input type="email" id="contactEmail" class="form-control" required data-i18n-ph="form_email" placeholder="البريد الإلكتروني">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage" data-i18n="form_msg">تفاصيل الرسالة أو الاستفسار</label>
+                            <textarea id="contactMessage" class="form-control" required data-i18n-ph="form_msg" placeholder="تفاصيل الرسالة أو الاستفسار"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-i18n="btn_send">إرسال الرسالة</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h4>إيناس حسن الغراري</h4>
+                    <p>مهندسة برمجيات 2026 • خريجة كلية تقنية الحاسوب - غوط الشعال</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav_about">نبذة عني</a>
+                    <a href="#skills" data-i18n="nav_skills">المهارات</a>
+                    <a href="#projects" data-i18n="nav_projects">المشاريع</a>
+                    <a href="#uiux" data-i18n="nav_uiux">تصاميم UI/UX</a>
+                    <a href="#contact" data-i18n="nav_contact">تواصل معي</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Enas Hasan. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></p>
+                <p data-i18n="footer_built">مبني باستخدام HTML5 و CSS3 المتقدم و JavaScript الصافي.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+       LIGHTBOX FULLSCREEN MODAL
+       ========================================================================== -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content-box">
+            <button type="button" class="lightbox-close-btn" id="lightboxClose" title="إغلاق (Esc)">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="Enlarged Project Preview" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Engine -->
+    <script src="main.js"></script>
+</body>
+</html>
